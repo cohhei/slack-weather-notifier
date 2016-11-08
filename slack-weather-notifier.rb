@@ -35,7 +35,7 @@ def post_weather_for weather, link: link
   post_to_slack "", attachments: attachments
 end
 
-uri = 'http://weather.livedoor.com/forecast/webservice/json/v1?city=140010'
+uri = 'http://weather.livedoor.com/forecast/webservice/json/v1?city=400010'
 
 res         = JSON.load(open(uri).read)
 title       = res['title']
